@@ -11,7 +11,7 @@ function Header() {
     <div className="nav nav-tabs">
       <div className="nav-item">
         <NavLink
-          to="Home"
+          to="/"
           end
           className={({ isActive }) =>
             isActive ? 'nav-link active' : 'nav-link'
@@ -38,6 +38,16 @@ function Header() {
           }
         >
           Contact
+        </NavLink>
+      </div>
+      <div className="nav-item">
+        <NavLink
+          to="about"
+          className={({ isActive }) =>
+            isActive ? 'nav-link active' : 'nav-link'
+          }
+        >
+          About Me
         </NavLink>
       </div>
     </div>
