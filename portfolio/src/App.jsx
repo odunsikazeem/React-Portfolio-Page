@@ -1,26 +1,25 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
-import Homepage from './components/app/Homepage';
-import Contact from './components/app/Contact';
-import Projectspage from './components/app/Projectspage';
+import Header from './components/Header/Header';
+import Homepage from './components/pages/home-folder/Homepage';
+import Contact from './components/pages/contact-folder/Contact';
+import Projectspage from './components/pages/projectpage-folder/Projectspage';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <Router>
       <Header />
-      {/* Wrap Route elements in a Routes component */}
       <Routes>
-        {/* Define routes using the Route component to render different page components at different paths */}
-        {/* Define a default route that will render the Home component */}
-        <Route path="/" element={<Homepage />} />
+        <Route path="home" element={<Homepage />} />
+        {/* <Route path="projectspage/*" element={<Projectspage />} /> */}
         <Route path="contact" element={<Contact />} />
-        <Route path="projectspage" element={<Projectspage />} />
-        {/* Define a route that will have descendant routes */}
-        <Route path="contact/*" element={<Contact />} />
         <Route path="projectspage/*" element={<Projectspage />} />
+        <Route path="contact/*" element={<Contact />} />
       </Routes>
+      <Footer/>
     </Router>
+    
   );
 }
 
