@@ -1,11 +1,12 @@
 import React from "react";
+import Myimage from "../../../asset/picture.jpg"
 import "./style.css"
 
 function Homepage() {
   return (
     <div className="homepage">
       <div className="homepage-row">
-      <img src=" "  alt="profile-image"/>
+      <img className="display"  src={Myimage}  alt="profile-image"/>
       </div>
      <div className="homepage-column">
       <div className="column-item">

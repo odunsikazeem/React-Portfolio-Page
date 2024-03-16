@@ -7,13 +7,14 @@ import "./style.css"
 
 
 
+
 function createCard(projectlist){
   return (
   <Card 
   id={projectlist.id}
   key = {projectlist.id}
   title={projectlist.title}
-  screenshot={projectlist.screenshot}
+  image={projectlist.image}
   project= {projectlist.projectURL}
   github = {projectlist.github}
   />
@@ -25,9 +26,7 @@ function Projectspage() {
     <Project>
           <Title>Projects List</Title>
             {projectlist.map(createCard)}
-    </Project>
-      
-      
+    </Project>        
   
   );
 }
