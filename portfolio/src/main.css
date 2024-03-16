@@ -1,0 +1,10 @@
+  * {
+    font-family:"McLaren", cursive;
+    box-sizing: border-box;
+  }
+  html,body {
+    padding: 0;
+    margin: 0;
+    background: white;
+    height: 100%;   
+  }

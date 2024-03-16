@@ -7,6 +7,10 @@ import Projectspage from './components/pages/projectpage-folder/Projectspage';
 import Footer from './components/Footer/Footer';
 import About from './components/pages/aboutme/About';
 
+
+
+
+
 function App() {
   return (
     <Router>

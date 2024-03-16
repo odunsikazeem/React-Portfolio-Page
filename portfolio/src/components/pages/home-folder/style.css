@@ -1,0 +1,30 @@
+.homepage {
+    font-family:"McLaren", cursive; 
+    display: flex;
+    text-align: center;
+    padding: 40px;
+    margin: 80px;
+    line-height: 45px;
+}
+ 
+.homepage-row {
+    flex-direction: row;
+}
+
+.homepage-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+    
+/* img {
+   border-radius: 50px;
+    width: 200px;
+    height: 200px; 
+    border-radius: 50%;
+    border: 7px solid #fff;
+    width: 120px;
+    height: 120px;
+}   */
+

@@ -1,11 +1,11 @@
 import React from "react";
-import "../home-folder/Homepage.css";
+import "./style.css"
 
 function Homepage() {
   return (
     <div className="homepage">
       <div className="homepage-row">
-      <img src="images/displaypicture.jpg"  alt="profile-image"/>
+      <img src=" "  alt="profile-image"/>
       </div>
      <div className="homepage-column">
       <div className="column-item">
