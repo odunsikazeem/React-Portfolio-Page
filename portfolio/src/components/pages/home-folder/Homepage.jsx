@@ -6,7 +6,7 @@ function Homepage() {
   return (
     <div className="homepage">
       <div className="homepage-row">
-      <img className="display"  src={Myimage}  alt="profile-image"/>
+      <img className="avatar"  src={Myimage}  alt="profile-image"/>
       </div>
      <div className="homepage-column">
       <div className="column-item">

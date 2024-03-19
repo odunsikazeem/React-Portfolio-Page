@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header/Header';
+import Navbar from './components/Nav/Navbar';
 import Homepage from './components/pages/home-folder/Homepage';
 import Contact from './components/pages/contact-folder/Contact';
 import Projectspage from './components/pages/projectpage-folder/Projectspage';
@@ -9,12 +9,10 @@ import About from './components/pages/aboutme/About';
 
 
 
-
-
 function App() {
   return (
     <Router>
-      <Header />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
         {/* <Route path="projectspage/*" element={<Projectspage />} /> */}

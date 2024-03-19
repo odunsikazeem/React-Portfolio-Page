@@ -1,5 +1,6 @@
 import React from "react";
 import Detail from "../detail/Detail";
+
 import "./style.css"
 
 
