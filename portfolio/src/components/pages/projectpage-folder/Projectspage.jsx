@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../card/card';
+import Card from '../card/Card';
 import projectlist from '../projectlist';
 import Project from "../project-folder/Project"
 import Title from '../Title/Title';
@@ -13,10 +13,11 @@ function createCard(projectlist){
   <Card 
   id={projectlist.id}
   key = {projectlist.id}
-  title={projectlist.title}
-  image={projectlist.image}
-  project= {projectlist.projectURL}
+  title ={projectlist.title}
+  image ={projectlist.image}
+  project = {projectlist.projectURL}
   github = {projectlist.github}
+  info = {projectlist.info}
   />
   )
   }

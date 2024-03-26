@@ -1,16 +1,15 @@
 .homepage {
-    font-family:"McLaren", cursive; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align:left;
     padding: 40px;
-    margin: 200px;
     line-height: 45px;
 }
  
 .homepage-row {
     flex-direction: row;
+    padding: 10px;
 }
 
 .homepage-column {
@@ -20,6 +19,10 @@
     flex-direction: column; 
     padding: 0px;
     font-size: 2rem;
+}
+
+.homepage p {
+    text-align: justify;
 }
     
 .avatar {
@@ -32,9 +35,9 @@
 }  
 
 @media screen and (max-width:768px){
-    
-    .homepage{
-        display: block;
-    }     
+      
+    .avatar {
+        display: none;
+    }   
 } 
 

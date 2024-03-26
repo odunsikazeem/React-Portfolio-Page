@@ -3,7 +3,7 @@ import RightNav from "../RightNav/RightNav";
 import "./style.css";
 
 function Hamburger() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(window.innerWidth > 768);
 
   const toggleMenu=()=>{
     setIsOpen(!isOpen);
@@ -13,16 +13,16 @@ function Hamburger() {
 
   useEffect (
     ()=>{
-      const hideBurger=()=>{
+      const hideRightNav=()=>{
         if (window.innerWidth > 768) {
           setIsOpen(true);
       } else {
            setIsOpen(false);
       }
       }
-      window.addEventListener("resize", hideBurger)
+      window.addEventListener("resize", hideRightNav)
       return () => {
-        window.removeEventListener("resize", hideBurger);
+        window.removeEventListener("resize", hideRightNav);
      };
     }, []
  )

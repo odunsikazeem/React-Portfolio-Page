@@ -1,26 +1,53 @@
-import React from 'react';
+import React,{useRef, useState} from 'react'
+import  "./style.css"
+import emailjs from "@emailjs/browser"
+
+
+
 
 function Contact() {
+
+const [ResponseText, setResponseText]=useState (" ")
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_p3hvjz6', 'template_nacdham', form.current, {
+        publicKey: '68lF4grWoT6CJYyeV',
+      })
+      .then(
+        () => {
+          setResponseText("Submitted")
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
-    <div>
-      <h1>contact</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+    <div className="contact">
+      <p>{ResponseText}</p>
+      <h1>Contact Me</h1>
+      <form ref={form} onSubmit={sendEmail}>
+      
+      <input type="text" name="from_name" placeholder='Type Name'/>
+      <br/>
+      
+      <input type="email" name="from_email" placeholder='Type Email'/>
+      <br/>
+      
+      <textarea name="message" placeholder='Your Message here ...'/>
+      <br/>
+      {/* <input type="submit" value="Send" /> */}
+      <button>Submit</button>
+    </form>
     </div>
-  );
+  )
 }
 
 export default Contact;

@@ -6,6 +6,7 @@ import Contact from './components/pages/contact-folder/Contact';
 import Projectspage from './components/pages/projectpage-folder/Projectspage';
 import Footer from './components/Footer/Footer';
 import About from './components/pages/aboutme/About';
+import Skills from './components/Skills/Skills';
 
 
 
@@ -15,12 +16,12 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        {/* <Route path="projectspage/*" element={<Projectspage />} /> */}
         <Route path="contact" element={<Contact />} />
         <Route path="projectspage/*" element={<Projectspage />} />
         <Route path="contact/*" element={<Contact />} />
         <Route path="about" element={<About />} />
       </Routes>
+      
       <Footer/>
     </Router>
     

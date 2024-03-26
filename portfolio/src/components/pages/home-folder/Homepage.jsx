@@ -1,9 +1,11 @@
 import React from "react";
 import Myimage from "../../../asset/picture.jpg"
+import Skills from "../../Skills/Skills"
 import "./style.css"
 
 function Homepage() {
   return (
+    <div className="profile">
     <div className="homepage">
       <div className="homepage-row">
       <img className="avatar"  src={Myimage}  alt="profile-image"/>
@@ -14,14 +16,16 @@ function Homepage() {
       </div>
       <div className="column-item">
         <p>
-          I am a Front End Web Developer with passion for problems-solving and
-          have a keen interest in emerging technologies. I have honed my skill
+          I am a Frontend Developer with passion for problems-solving and
+          have keen interest in emerging technologies. I have honed my skill
           in Front-End Development by using programming languages like
-          HTML5,CSS,JavaScript,MediaQueries and Bootstraps.I am a product of edX
+          HTML5, CSS, JavaScript, MediaQueries, Bootstraps, Git, GitHub and some modern framework like React and Nodejs.I am a product of edX
           bootcamp.
         </p>
       </div>
       </div>
+    </div>
+    <Skills/> 
     </div>
   );
 }
