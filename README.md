@@ -8,6 +8,7 @@ N/A
 
 ## Usage
 The web application is for public viewing and a call to collaborate with fellow developers.Feel free to peruse my work and comments are also welcome for improvement.
+
 <img src="./portfolio/src/asset/portfolio.png" alt="image">
 
 
