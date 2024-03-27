@@ -17,7 +17,7 @@ function Homepage() {
       <div className="column-item">
         <p>
           A Frontend Developer with passion for problems-solving and
-          have keen interest in emerging technologies. I have honed my skill
+          with keen interest in emerging technologies. I have honed my skill
           in Frontend development by using programming languages like
           HTML5, CSS, JavaScript, MediaQueries, Bootstraps, Git, GitHub and some modern framework like React and Nodejs.I am a product of edX
           bootcamp.
