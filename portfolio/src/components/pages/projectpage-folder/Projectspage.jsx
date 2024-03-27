@@ -25,7 +25,7 @@ function createCard(projectlist){
 function Projectspage() {
   return (
     <Project>
-          <Title>Projects List</Title>
+          <Title>Feel from to go through and peruse my work</Title>
             {projectlist.map(createCard)}
     </Project>        
   
